@@ -11,4 +11,4 @@ the needy by building an interface that will help in easy communication between 
 distributors) and the providers.
 
 ## NGO integratin webapplication - CARE CLUB
-# this repository contains the Frontent (reactJS) code of the webapplicatiom
+ this repository contains the Frontent (reactJS) code of the webapplicatiom
