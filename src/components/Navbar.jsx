@@ -39,8 +39,8 @@ const Navbar = () => {
             {/* footer link  */}
             <h6>Contact Info</h6>
           </Link>
-          <span>Profile</span>
-          <span>LogOut</span>
+//           <span>Profile</span>
+//           <span>LogOut</span>
         </div>
       </div>
     </div>
