@@ -38,9 +38,8 @@ const Navbar = () => {
           <Link className="link" to="contactinfo" smooth = {true} duration = {1000}>
             {/* footer link  */}
             <h6>Contact Info</h6>
-          </Link>
-//           <span>Profile</span>
-//           <span>LogOut</span>
+          {/* <span>Profile</span>
+          <span>LogOut</span> */}
         </div>
       </div>
     </div>
