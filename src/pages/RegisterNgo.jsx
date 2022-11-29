@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import {  useFormik } from "formik";
+import { useFormik } from "formik";
 import { basicSchema } from "../schemas";
 const Register = () => {
   const navigate = useNavigate();
@@ -14,9 +14,9 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("/auth/registerIn", values);
+      await axios.post("/auth/registerN", values);
       // console.log(res);
-      navigate("/donator");
+      navigate("/ngo");
     } catch (err) {
       setError(err.response.data);
     }
@@ -27,9 +27,8 @@ const Register = () => {
       mail: "",
       password: "",
       confirmPassword: "",
-      donatorType: "",
-      firmName: "",
-      name: "",
+      service: "",
+      NgoName: "",
       address: "",
       PinCode: "",
       city: "",
@@ -45,7 +44,7 @@ const Register = () => {
   // console.log(errors);
   return (
     <div className="auth">
-      <h1>REGISTER - DONATORS</h1>
+      <h1>REGISTER - NGO</h1>
       <form autoComplete="off">
         <label>Username</label>
         <input
@@ -95,11 +94,17 @@ const Register = () => {
         {errors.confirmPassword && touched.confirmPassword ? (
           <div className="error">{errors.confirmPassword} </div>
         ) : null}
-        {/* donator type */}
-        <label>DONATOR TYPE : </label>
+        <label>NGO NAME</label>
+        <input
+          type="text"
+          placeholder="ENTER THE FULL NAME OF THE NGO"
+          name="NgoName"
+          onChange={handleChangefunc}
+        />
+        <label>SERVICE : </label>
         <select
-          // value={values.donatorType}
-          name="donatorType"
+          // value={values.service}
+          name="service"
           defaultValue={"DEFAULT"}
           onBlur={handleBlur}
           onChange={handleChangefunc}
@@ -107,28 +112,17 @@ const Register = () => {
           <option value="DEFAULT" disabled>
             CHOOSE AN OPTION
           </option>
-          <option value="Organisation">Organisation</option>
-          <option value="Individual">Individual</option>
-          <option value="Others">Others</option>
+          <option value="FOOD">FOOD</option>
+          <option value="CLOTHES" disabled={true}>
+            CLOTHES
+          </option>
+          <option value="BOOKS" disabled={true}>
+            BOOKS
+          </option>
         </select>
-        {errors.donatorType && touched.donatorType ? (
+        {errors.service && touched.service ? (
           <div className="error">{errors.confirmPassword} </div>
         ) : null}
-
-        <label>FIRM NAME (for organisations)</label>
-        <input
-          type="text"
-          placeholder="ENTER ORGANISATION NAME"
-          name="firmName"
-          onChange={handleChangefunc}
-        />
-        <label>NAME (for individuals)</label>
-        <input
-          type="text"
-          placeholder="ENTER YOUR FULL NAME"
-          name="name"
-          onChange={handleChangefunc}
-        />
         <label>ADDRESS</label>
         <textarea
           rows="2"

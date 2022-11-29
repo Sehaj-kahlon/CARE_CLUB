@@ -15,14 +15,14 @@ $lightGreen: #b9e7e7;
         border: 1px;
       }
     }
+    //for registration page
     .auth {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       background-color: $lightGreen;
-      height: 150vh;
-
+      height: 190vh;
       h1 {
         font-size: 20px;
         color: teal;
@@ -35,16 +35,63 @@ $lightGreen: #b9e7e7;
         padding: 50px;
         background-color: white;
         width: 600px;
-        gap: 20px;
+        gap: 12px;
         input {
           padding: 10px;
-          border: none;
-          border-bottom: 1px solid gray;
+          border: 1px teal solid;
+          border-radius: 0.5rem;
+          font-style: italic;
+          transition: all 80ms ease-in;
+        }
+        input:hover {
+          border-color: $lightGreen;
+        }
+        input:focus {
+          border-color: teal;
+        }
+        textarea {
+          resize: none;
+          padding: 10px;
+          border: 1px teal solid;
+          border-radius: 0.5rem;
+          font-style: italic;
+          transition: all 80ms ease-in;
+        }
+        textarea:hover {
+          border-color: $lightGreen;
+        }
+        textarea:focus {
+          border-color: teal;
+        }
+        select {
+          resize: none;
+          padding: 10px;
+          border: 1px teal solid;
+          border-radius: 0.5rem;
+          font-style: italic;
+          transition: all 80ms ease-in;
+        }
+        select:hover {
+          border-color: $lightGreen;
+        }
+        select:focus {
+          border-color: teal;
+        }
+
+        label {
+          font-weight: 400;
         }
         button {
           padding: 10px;
           border: none;
           background-color: teal;
+          color: white;
+          cursor: pointer;
+        }
+        button:disabled{
+          padding: 10px;
+          border: none;
+          background-color: grey;
           color: white;
           cursor: pointer;
         }
@@ -56,38 +103,31 @@ $lightGreen: #b9e7e7;
         span {
           font-size: 12px;
           text-align: center;
+          display: inline-flexbox;
         }
       }
-      form1 {
-        display: flex;
-        flex-direction: column;
-        padding: 50px;
-        background-color: white;
-        // width: 600px;
-        gap: 20px;
-        input {
-          padding: 10px;
-          border: none;
-          border-bottom: 1px solid gray;
-        }
-        button {
-          padding: 10px;
-          border: none;
-          background-color: teal;
-          color: white;
-          cursor: pointer;
-        }
-        p {
-          font-size: 12px;
-          color: red;
-          text-align: center;
-        }
-        span {
-          font-size: 12px;
-          text-align: center;
+      .relink {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+        &:hover {
+          color: teal;
+          border: 1px;
         }
       }
     }
+    input.input-error,
+    select.input-error {
+      border-color: #fc8181;
+    }
+    .error {
+      color: #fc8181;
+      font-size: 0.75rem;
+      text-align: left;
+      margin-top: 0.25rem;
+
+    }
+
     //navbar
     .navbar {
       max-width: 1440px;
@@ -109,14 +149,14 @@ $lightGreen: #b9e7e7;
           display: flex;
           align-items: center;
           gap: 22px;
-          margin-inline-start: 510px;
+          margin-inline-start: 670px;
         }
         h6 {
           font-size: 17px;
           font-weight: 400;
         }
       }
-      .dropmenue{
+      .dropmenue {
         position: absolute;
         top: 5rem;
         width: 180px;
@@ -137,7 +177,7 @@ $lightGreen: #b9e7e7;
         }
       }
     }
-    //FOOTER{
+    //FOOTER{rev
     .footer {
       // margin-top: 100px;
       padding: 20px;

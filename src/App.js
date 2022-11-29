@@ -1,13 +1,13 @@
-import { createBrowserRouter, RouterProvider, Outlet} from "react-router-dom";
-import Register from "./pages/Register";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Register from "./pages/RegisterNgo";
 import RegisterIn from "./pages/RegisterIn";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
-// import Write from "./pages/Write";
-// import {Single} from "./pages/Single";
+import Donator from "./pages/donator";
+import Ngopage from "./pages/ngo";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import "../src/style.scss"
+import "../src/style.scss";
 const Layout = () => {
   return (
     <>
@@ -38,6 +38,10 @@ const router = createBrowserRouter([
         path: "/registerIn",
         element: <RegisterIn />,
       },
+      // {
+      //   path: "/ngo",
+      //   element: <Ngopage />,
+      // },
     ],
   },
 
@@ -54,13 +58,21 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
+  {
+    path: "/donator",
+    element: <Donator />,
+  },
+  {
+    path: "/ngo",
+    element: <Ngopage />,
+  },
 ]);
 
 function App() {
   return (
     <div className="app">
-      <div className = "container">
-      <RouterProvider router={router} />
+      <div className="container">
+        <RouterProvider router={router} />
       </div>
     </div>
   );

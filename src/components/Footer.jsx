@@ -10,16 +10,19 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa";
 function Footer() {
   return (
-    <footer className="footer" id = "contactinfo">
+    <footer className="footer" id="contactinfo">
       <div className="container">
-        <div class="block">
+        <div className="block">
           <figure>
             <img src={Logo} alt="Logo" />
           </figure>
-          <h2 class="title">CARE CLUB</h2>
+          <h2 className="title">CARE CLUB</h2>
           <p>
-            <i> " A helping hand can be a ray of sunshine
-            <br /> in a cloudy world "</i>
+            <i>
+              {" "}
+              " A helping hand can be a ray of sunshine
+              <br /> in a cloudy world "
+            </i>
           </p>
         </div>
         <hr className="hr1" />
@@ -38,7 +41,10 @@ function Footer() {
           <div className="col1">
             <ul className="list-unstyled">
               <li className="flink">
-                <a href="https://www.google.com/maps/place/Punjab+Engineering+College/@30.7672898,76.7869762,15z/data=!4m5!3m4!1s0x0:0xc0844bf7cbdcc6e9!8m2!3d30.7672898!4d76.7869762" className="flink">
+                <a
+                  href="https://www.google.com/maps/place/Punjab+Engineering+College/@30.7672898,76.7869762,15z/data=!4m5!3m4!1s0x0:0xc0844bf7cbdcc6e9!8m2!3d30.7672898!4d76.7869762"
+                  className="flink"
+                >
                   Location
                 </a>
               </li>
@@ -54,17 +60,17 @@ function Footer() {
             <h4>Website Contents / Menue</h4>
             <ul className="list-unstyled">
               <li>
-                <Link className="flink" to="about" smooth = {true} duration = {1000}>
+                <Link className="flink" to="about" smooth={true} duration={1000}>
                   About Us
                 </Link>
               </li>
               <li>
-                <Link className="flink" to="gallery" smooth = {true} duration = {1000}>
+                <Link className="flink" to="gallery" smooth={true} duration={1000}>
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link className="flink" to="feedback" smooth = {true} duration = {1000}>
+                <Link className="flink" to="feedback" smooth={true} duration={1000}>
                   Reviews
                 </Link>
               </li>
@@ -112,17 +118,16 @@ function Footer() {
             <FaRegCopyright />
             &nbsp;2022 #include Inc. All rights reserved.
           </span>
-          <p className="p">
+          <span className="p">
             <a href="https://policies.google.com/terms?hl=en-IN&fg=1" className="flink">
-              {" "}
               Terms & Conditions &nbsp;
             </a>
-            <div class="vl"></div>
+            <div className="vl"></div>
             <a href="https://www.clientsondemand.com/privacy-policy/" className="flink">
               &nbsp;Privacy Policy&nbsp;
             </a>
-            {/* <div class="vl"></div> */}
-          </p>
+            {/* <div className="vl"></div> */}
+          </span>
         </div>
       </div>
     </footer>

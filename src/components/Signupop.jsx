@@ -4,16 +4,15 @@ const Signupop = () => {
   return (
     <div className="dropmenue">
       <ul className="not decided">
-
-        <li >
+        <li>
           <Link className="link" to="/register">
             <h6>For NGO's</h6>
           </Link>
         </li>
-        <hr/>
+        <hr />
         <li>
           <Link className="link" to="/registerIn">
-            <h6>For Individulas</h6>
+            <h6>For Donators</h6>
           </Link>
         </li>
       </ul>

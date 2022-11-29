@@ -18,7 +18,7 @@ const Navbar = () => {
           <NavLink className="link" to="/">
             <h6>Home</h6>
           </NavLink>
-          <span className="link" onMouseOver = {() => setOpenProfile((prev) => !prev)} >
+          <span className="link" onMouseOver = {() => setOpenProfile((prev) => !prev)}>
             <h6>SignUp</h6>
           </span>
           {
@@ -39,8 +39,8 @@ const Navbar = () => {
             {/* footer link  */}
             <h6>Contact Info</h6>
           </Link>
-          <span>Profile</span>
-          <span>LogOut</span>
+          {/* <span>Profile</span>
+          <span>LogOut</span> */}
         </div>
       </div>
     </div>

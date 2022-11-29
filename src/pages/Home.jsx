@@ -15,10 +15,10 @@ const Home = () => {
   return (
     <div className="home">
       <div className="continer">
-        <div class="about" id = "about">
+        <div className="about" id="about">
           <img src={back} alt="Logo" />
 
-          <h2 class="title">ABOUT US</h2>
+          <h2 className="title">ABOUT US</h2>
           <p>
             <strong>How long has it been since you have eaten your last meal?</strong>
             <br />
@@ -104,33 +104,33 @@ const Home = () => {
             <img src={pic12} alt="Logo" />
           </div>
         </div>
-        <div className="feedback" id = "feedback">
+        <div className="feedback" id="feedback">
           <div className="rev1">
             <p>
-            Food shortage is an issue of grave concern. If you feel like giving back to the community, this is the place!
-            <br/>
-            - BRAC(NGO)
+              Food shortage is an issue of grave concern. If you feel like giving back to the
+              community, this is the place!
+              <br />- BRAC(NGO)
             </p>
           </div>
           <div className="rev2">
             <p>
-            So, Every time there is a celebration in the family, we don’t have to worry about the excess food left because NGOs can be found easily on CARE CLUB
-              <br/>
-              - Patrick 
+              So, Every time there is a celebration in the family, we don’t have to worry about the
+              excess food left because NGOs can be found easily on CARE CLUB
+              <br />- Patrick
             </p>
           </div>
           <div className="rev3">
             <p>
-              We are now able to connect with the donators easily. Great experience Care Club thank you.
-              <br/>
-              - Pratham (NGO)
+              We are now able to connect with the donators easily. Great experience Care Club thank
+              you.
+              <br />- Pratham (NGO)
             </p>
           </div>
           <div className="rev4">
             <p>
-            Thank you, Care Club, for providing me with the opportunity to help needy people. Nobody should sleep empty stomach.
-            <br/>
-            - Jessica
+              Thank you, Care Club, for providing me with the opportunity to help needy people.
+              Nobody should sleep empty stomach.
+              <br />- Jessica
             </p>
           </div>
         </div>
