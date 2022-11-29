@@ -12,4 +12,3 @@ distributors) and the providers.
 
 ## NGO integratin webapplication - CARE CLUB
 
-this repository contains the Frontent (reactJS) code of the webapplicatiom
