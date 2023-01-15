@@ -10,5 +10,5 @@ Hence there is a need to come up with a solution that can avoid food wastage & c
 the needy by building an interface that will help in easy communication between the NGOs (i.e.
 distributors) and the providers.
 
-## NGO integratin webapplication - CARE CLUB
+## NGO integration webapplication - CARE CLUB
 
